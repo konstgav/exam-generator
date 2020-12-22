@@ -1,16 +1,23 @@
 <!doctype html>
-<link rel="stylesheet" type="text/css" href="bootstrap_adjust.css">
-<title>Генератор случайных вопросов</title>
-  <h1>Приложение случайным образом выдает вопросы из заданного списка</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Генератор случайных вопросов</title>
+</head>
+<body>
+  <h2>Приложение случайным образом выдает вопросы из заданного списка</h2>
 
   <form action="" method=post>
-    <p>
+    <div class="container-fluid">
      <label for="student_name">Укажите имя студента: </label>
      <input type="text" for="student_name">
      <button type="submit">Выбрать вопрос</button>
-    </p>
+    </div>
   </form>
-
+  <ul class="list-group">
   {% for question in questions %}
-      <p>{{ question }} </p>
+    <li class="list-group-item"><div class="container-fluid">{{ question }} </div></li>
   {% endfor %}
+  </ul>
+</body>
