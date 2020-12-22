@@ -8,7 +8,7 @@
 
 ## Для начала работы
 
-1. [Установить python3.9](https://www.python.org/downloads/) 
+1. [Установить python3.9](https://www.python.org/downloads/), при установке разрешить добавить путь к python в переменную окружения
 2. Установить библиотеку flask, для этого в командной строке выполнить `pip install Flask`
 3. Cкопировать код приложения, загрузив `exam-generator-master.zip` с этого сайта
 4. Отредактировать xml-файл с вопросами (`questions.xml`)
